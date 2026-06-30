@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACA × Baam · SEO 与 GEO 增长服务提案</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F5F0E6; --cream-light:#FAF7F0; --cream-deep:#EBE3D2;
+    --ink:#1A1814; --ink-soft:#3D3833; --ink-mute:#6B6259;
+    --rule:#C9BFAE; --rule-soft:#DDD3BF;
+    --amber:#D4882D; --amber-deep:#B86E1A;
+    --rust:#A4452A; --rust-deep:#842F1B;
+    --sage:#6B8E6E; --sage-deep:#4F7253; --sage-dark:#2D4530;
+    --gold:#C9A227;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--cream);color:var(--ink);font-family:'Noto Sans SC',system-ui,sans-serif;font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  .display{font-family:'Instrument Serif',Georgia,'Noto Sans SC',serif;font-weight:400;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+  .page{max-width:920px;margin:0 auto;background:var(--cream-light);padding:64px 72px 72px;border-left:1px solid var(--rule-soft);border-right:1px solid var(--rule-soft);}
+  .page + .page{border-top:1px solid var(--rule-soft);}
+  .cover{background:var(--cream-deep);}
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--amber-deep);margin-bottom:28px;}
+  .cover-title{font-family:'Instrument Serif',Georgia,serif;font-size:60px;line-height:1.02;color:var(--ink);margin-bottom:18px;letter-spacing:-.01em;}
+  .cover-title em{font-style:italic;color:var(--rust-deep);}
+  .cover-sub{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:24px;line-height:1.35;color:var(--ink-soft);max-width:640px;}
+  .cover-meta{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);margin-top:48px;padding-top:20px;}
+  .cover-meta div{border-right:1px solid var(--rule);padding:0 22px;}
+  .cover-meta div:first-child{padding-left:0;}
+  .cover-meta div:last-child{border-right:none;}
+  .cover-meta .k{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:6px;}
+  .cover-meta .v{font-size:14px;font-weight:700;line-height:1.35;}
+  .mark{display:flex;align-items:baseline;gap:18px;margin-bottom:28px;padding-bottom:14px;border-bottom:1px solid var(--rule);}
+  .mark-num{font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.14em;color:var(--amber-deep);font-weight:700;}
+  .mark-t{font-size:16px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;}
+  h2.headline{font-family:'Instrument Serif',Georgia,serif;font-size:40px;line-height:1.08;margin-bottom:14px;letter-spacing:-.01em;}
+  h2.headline em{font-style:italic;color:var(--rust-deep);}
+  .deck{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:19px;color:var(--ink-soft);margin-bottom:28px;max-width:680px;line-height:1.4;}
+  p{margin-bottom:14px;}
+  h3{font-size:18px;font-weight:700;margin:26px 0 10px;}
+  .lead{font-weight:700;}
+  ul{margin:0 0 16px 0;padding-left:0;list-style:none;}
+  ul li{position:relative;padding-left:20px;margin-bottom:9px;}
+  ul li::before{content:'—';position:absolute;left:0;color:var(--amber-deep);}
+  .callout{background:var(--cream-deep);border-left:3px solid var(--amber);padding:20px 26px;margin:22px 0;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:18px;line-height:1.45;color:var(--ink-soft);}
+  .callout strong{font-style:normal;font-family:'Noto Sans SC',sans-serif;font-weight:700;color:var(--ink);font-size:15px;}
+  .pill{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;background:var(--rust-deep);color:var(--cream-light);padding:2px 7px;border-radius:3px;margin-left:6px;}
+  .pill.sage{background:var(--sage-deep);}
+  .qb-sec{border:1px solid var(--rule);border-radius:12px;background:var(--cream);padding:16px 18px;margin-bottom:14px;}
+  .qb-h{display:flex;align-items:baseline;gap:8px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--amber-deep);font-weight:700;margin-bottom:8px;}
+  .qb-h small{color:var(--ink-mute);font-weight:500;letter-spacing:.03em;text-transform:none;}
+  .qb-row{display:flex;align-items:center;gap:12px;padding:13px 0;border-top:1px solid var(--rule);}
+  .qb-row:first-of-type{border-top:none;}
+  .qb-rl{flex:1;min-width:0;}
+  .qb-rt{font-size:14px;font-weight:700;}
+  .qb-rd{font-size:12px;color:var(--ink-mute);margin-top:2px;line-height:1.45;}
+  .svc-qty{display:flex;flex-direction:column;align-items:flex-end;gap:7px;flex:0 0 auto;padding-left:12px;}
+  .svc-price{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;white-space:nowrap;}
+  .svc-price small{font-size:10px;color:var(--ink-mute);font-weight:400;}
+  .qrow{display:flex;align-items:center;gap:6px;font-size:11.5px;color:var(--ink-mute);}
+  .qrow input{width:62px;font-size:14px;font-weight:700;padding:5px 8px;border:1px solid var(--rule);border-radius:7px;background:#fff;color:var(--ink);text-align:center;font-family:'JetBrains Mono',monospace;}
+  .qb-row.chk{cursor:pointer;}
+  .qb-row.chk input{margin:0 0 0 8px;width:18px;height:18px;accent-color:var(--amber-deep);flex:0 0 auto;}
+  .chk-price{font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;white-space:nowrap;text-align:right;}
+  .chk-price small{display:block;font-size:10px;color:var(--ink-mute);font-weight:400;}
+  .geo-opt{cursor:pointer;align-items:flex-start;}
+  .geo-opt .geo-radio{margin:2px 0 0 8px;width:18px;height:18px;accent-color:var(--amber-deep);flex:0 0 auto;}
+  .geo-name{font-size:15px;font-weight:700;}
+  .geo-eyebrow{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:4px;}
+  .geo-meta{font-size:11.5px;color:var(--ink-mute);margin:6px 0 10px;line-height:1.4;}
+  .geo-feat{list-style:none;margin:0;padding:0;}
+  .geo-feat li{position:relative;padding-left:22px;margin-bottom:8px;font-size:12.5px;line-height:1.5;color:var(--ink-soft);}
+  .geo-feat li::before{content:'✓';position:absolute;left:0;top:0;color:var(--amber-deep);font-weight:700;}
+  .geo-price{font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;white-space:nowrap;text-align:right;}
+  .geo-price small{display:block;font-size:10px;color:var(--ink-mute);font-weight:400;}
+  .geo-clear{display:inline-flex;align-items:center;gap:8px;margin-top:6px;font-size:12.5px;color:var(--ink-mute);cursor:pointer;}
+  .geo-clear input{width:15px;height:15px;accent-color:var(--ink-mute);}
+  .qb-sum{border:2px solid var(--ink);border-radius:12px;background:#fff;padding:18px 22px;margin-top:4px;}
+  .qb-sr{display:flex;justify-content:space-between;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--rule);font-size:14px;}
+  .qb-sr:last-child{border-bottom:none;}
+  .qb-sr .v{font-family:'JetBrains Mono',monospace;font-weight:700;}
+  .qb-sr.big{padding-top:13px;}
+  .qb-sr.big .l{font-size:15px;font-weight:700;}
+  .qb-sr.big .v{font-size:26px;color:var(--sage-deep);}
+  .appx-toc{list-style:none;padding:0;margin:8px 0 0;}
+  .appx-toc li{display:flex;align-items:baseline;gap:14px;padding:16px 0;border-bottom:1px solid var(--rule-soft);}
+  .appx-toc .n{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;color:var(--amber-deep);flex:0 0 auto;}
+  .appx-toc .t{font-weight:700;font-size:15px;color:var(--rust-deep);text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:1px;display:inline-block;}
+  .appx-toc .t:hover{border-bottom-color:var(--rust-deep);}
+  .appx-toc .d{font-size:12px;color:var(--ink-mute);margin-top:4px;}
+  .foot{margin-top:48px;padding-top:18px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-mute);}
+  @media print{ body{background:#fff;} .page{border:none;max-width:none;page-break-after:always;} }
+  @media (max-width:720px){
+    .page{padding:36px 22px 48px;}
+    .cover-title{font-size:38px;} .cover-sub{font-size:19px;}
+    h2.headline{font-size:30px;}
+    .cover-meta{grid-template-columns:1fr;gap:10px;}
+    .cover-meta div{border-right:none;padding:0;}
+    .qb-row{flex-wrap:wrap;}
+  }
+</style>
+</head>
+<body>
+
+<section class="page cover">
+  <div class="eyebrow">ACA Acupuncture &amp; Wellness × Baam · 机密提案</div>
+  <h1 class="cover-title">把高口碑<br>变成<em>可见的客流</em></h1>
+  <p class="cover-sub">SEO（评论 + GBP）与 GEO（AI 搜索）双引擎增长服务提案 —— 让 ACA 19 家门店在 Google 与 AI 引擎中被稳定推荐。</p>
+  <div class="cover-meta">
+    <div><div class="k">致</div><div class="v">Dr. Yanzhu Liu<br>创始人兼 CEO</div></div>
+    <div><div class="k">自</div><div class="v">Baam</div></div>
+    <div><div class="k">日期 · 版本</div><div class="v">2026 年 6 月<br>v1.0</div></div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="mark"><span class="mark-num">§ 01</span><span class="mark-t">ACA 简介</span></div>
+  <h2 class="headline">ACA <em>简介</em>。</h2>
+  <p>ACA Acupuncture &amp; Wellness 是 Dr. Yanzhu Liu 创立的连锁中医针灸品牌，以纽约为核心，延伸至新泽西与加州，官网导航覆盖约 19 个站点（曼哈顿 14 家、皇后区 3 家、新泽西 1 家、加州 1 家）。</p>
+  <p>服务体系完整：针灸、推拿（TuiNa）、中草药、拔罐、艾灸、足疗、面针、理疗等，覆盖疼痛管理、情绪与压力、女性与生育健康、消化与能量等方向。品牌定位清晰——以三千年中医传统对接西方现代医学，帮助患者减少对处方药的依赖。</p>
+  <h3>创始人即护城河</h3>
+  <p>Dr. Liu 拥有强势专家背书（北京中医药大学 MD/PhD、清华大学博士后、哥伦比亚大学研究背景、动脉粥样硬化与 AI 穴位检测相关专利、《内科学——中医学》主编）。<strong>在 GEO 语境里，这套"具名专家 + 资历"正是 AI 引擎在健康（YMYL）类目最看重的信任信号</strong>——目前几乎没有被结构化地喂给搜索与 AI 引擎，是最大的未开采资产。</p>
+</section>
+
+<section class="page">
+  <div class="mark"><span class="mark-num">§ 02</span><span class="mark-t">为什么是现在</span></div>
+  <h2 class="headline">最难的一步，ACA <em>已经做到了</em>。</h2>
+  <p class="deck">临床口碑领先，但口碑还没被翻译成两件正在决定客流的事。</p>
+  <p>ACA 全站门店评分普遍在 4.8 星以上，门店密布曼哈顿、紧邻地铁，持照资深医师 + 整合中医疗法——这是竞争对手最难复制的资产。但口碑尚未转化为：</p>
+  <ul>
+    <li><span class="lead">本地搜索（Local SEO）</span>——评论数量、评论回复、各店 GBP 一致性，是 Google 本地排名与"地图三宫格"的核心信号。</li>
+    <li><span class="lead">AI 搜索（GEO）</span>——越来越多客户直接在 ChatGPT、Claude、Perplexity、Gemini、Google AI Overviews 里问"曼哈顿最好的针灸师"，而不再翻蓝色链接。约 60% 的搜索如今以一个被合成的答案结束；名字没被点名，就拿不到点击。</li>
+  </ul>
+  <div class="callout"><strong>核心判断</strong><br>ACA 面向美国主流英语客群——这恰是 AI 搜索渗透最快的人群。口碑领先 + AI 可见度近乎空白 = 当下的窗口。</div>
+</section>
+
+<section class="page">
+  <div class="mark"><span class="mark-num">§ 03</span><span class="mark-t">Baam 平台介绍</span></div>
+  <h2 class="headline">一个平台，<em>同时</em>驱动 SEO 与 GEO。</h2>
+  <p class="deck">把过去分散在多个代理商与工具里的本地增长工作，合并到一个"自动化 + AI + 人工编辑"的平台。</p>
+  <p>Baam 专为多门店本地服务品牌设计，核心能力包括：</p>
+  <ul>
+    <li>自动优化 Google Business Profile，并持续发布新鲜内容；</li>
+    <li>用 AI + 数据规划、起草、优化内容与活动（AI 起草 + 人工润色把控品牌口吻与准确性）；</li>
+    <li>技术 SEO：信息架构、结构化数据、站点地图、移动优先与速度；</li>
+    <li>把 GBP、引用目录（citations）、评论与站点内容策略打通；一次创作、多渠道复用；</li>
+    <li>Review：自动化评论收集、回复与口碑管理。</li>
+  </ul>
+</section>
+
+<section class="page">
+  <div class="mark"><span class="mark-num">§ 04</span><span class="mark-t">项目内容</span></div>
+  <h2 class="headline">双引擎并行，<em>先试点后铺开</em>。</h2>
+  <h3>4.1　SEO：评论 + GBP（本地地基）</h3>
+  <p>目标：把"高评分、低声量"补成"高评分、高声量、强一致、勤互动"，直接拉升地图三宫格与本地包排名。执行项：</p>
+  <ul>
+    <li><strong>GBP 标准化</strong>——19 店统一主/次类目、服务清单与官网及结构化数据对齐，建立"GBP 为唯一真相源"的更新流程；</li>
+    <li><strong>评论增长引擎</strong>——离店后 24–72 小时自动触发多语言评价邀请，把高满意度患者转化为公开评论；</li>
+    <li><strong>评论回复自动化 + 人工把关</strong>——覆盖全部新评论与历史积压，回复中自然嵌入服务/地点关键词；</li>
+    <li><strong>引用目录统一 + 跨店品牌一致性</strong>——清理 NAP 不一致，统一各店文案模板。</li>
+  </ul>
+  <h3>4.2　GEO：AI 搜索可见度（Baam AI Search &amp; Growth Audit）</h3>
+  <p>AI 引擎奖励的是不同的东西：schema 完整度、具名作者署名、行内引用、llms.txt、FAQ 密度——Google 排第一也可能在 AI 答案里隐形。健康类目尤其吃信任，缺具名专家与引用会被降权；而引用 + 数据可把被引率提升 30–40%。<strong>Dr. Liu 的资历恰是 AI 想要的信号</strong>，结构化呈现后，ACA 有机会成为"纽约针灸"在 AI 答案里的默认推荐。</p>
+  <p>起点是一份约 2 分钟交付的诊断：在 Claude / ChatGPT / Perplexity / Gemini（含 Google AI Overviews）上以 25 条真实潜客问题做实测（125 个结果），输出 100 分制 GEO 评分、5 段逐字 AI 回答样本、AI 眼中的竞品，以及按失败类型拆分、带获客增量预估的 180 天"被引用路径"计划。</p>
+  <div class="callout"><strong>同行已验证</strong><br>Baam 已为纽约一家中医针灸诊所出过真实报告：在"acupuncture in Middletown"上 AI 推荐的是竞品而非它，GEO 仅 38/100，180 天计划可拉升至 82——与 ACA 处境高度类似（临床强、AI 弱）。</div>
+</section>
+
+<section class="page">
+  <div class="mark"><span class="mark-num">§ 05</span><span class="mark-t">报价配置表 · 自动算价</span></div>
+  <h2 class="headline">填入门店数 / 勾选服务，<em>价格自动合计</em>。</h2>
+  <p class="deck">A、B 按「门店数 × 单店月费」计，可分别为不同服务填写门店数；C、D 按品牌整体计价、不分门店。全部为月度服务。</p>
+  <div id="qb">
+    <div class="qb-sec">
+      <div class="qb-h">A · 月度服务 · 评论管理（每店 · 每月）</div>
+      <div class="qb-row">
+        <div class="qb-rl"><span class="qb-rt">Review 自助版</span><span class="qb-rd">自动评论邀请；回复由你方处理，平台全程驱动</span></div>
+        <div class="svc-qty"><span class="svc-price">$99<small>/店·月</small></span><span class="qrow"><input type="number" id="cnt-self" min="0" max="50" value="0"> 家门店</span></div>
+      </div>
+      <div class="qb-row">
+        <div class="qb-rl"><span class="qb-rt">Review 全托管 <span class="pill sage">推荐</span></span><span class="qb-rd">自动邀请 + 以品牌口吻代回全部评论，含历史回复补齐</span></div>
+        <div class="svc-qty"><span class="svc-price">$399<small>/店·月</small></span><span class="qrow"><input type="number" id="cnt-full" min="0" max="50" value="0"> 家门店</span></div>
+      </div>
+    </div>
+    <div class="qb-sec">
+      <div class="qb-h">B · 月度服务 · GBP（每店 · 每月）</div>
+      <div class="qb-row">
+        <div class="qb-rl"><span class="qb-rt">GBP</span><span class="qb-rd">Google Business Profile 设置与持续优化</span></div>
+        <div class="svc-qty"><span class="svc-price">$99<small>/店·月</small></span><span class="qrow"><input type="number" id="cnt-gbp" min="0" max="50" value="0"> 家门店</span></div>
+      </div>
+    </div>
+    <div class="qb-sec">
+      <div class="qb-h">C · 月度服务 · Advanced SEO with Website（按品牌整体 · 选一档）</div>
+      <label class="qb-row chk">
+        <div class="qb-rl"><span class="qb-rt">Advanced SEO with Website</span><span class="qb-rd">网页及 Google Search 全面优化 SEO（按品牌整体，不分门店）</span></div>
+        <span class="chk-price">$1,999<small>/月 · 全品牌</small></span>
+        <input type="checkbox" id="adv" value="1999">
+      </label>
+    </div>
+    <div class="qb-sec">
+      <div class="qb-h">D · 月度服务 · GEO / AI 搜索（按品牌整体 · 选一档）</div>
+      <label class="qb-row geo-opt">
+        <div class="qb-rl">
+          <div class="geo-eyebrow">Full Build + AI Execution</div>
+          <div class="geo-name">Website + growth engine</div>
+          <div class="geo-meta">12 个月 · 月度 retainer · 建站 + 维护 · 覆盖全部 19 家门店</div>
+          <ul class="geo-feat">
+            <li>完整 30/90/180/365 天 AI 内容与引用执行</li>
+            <li>cluster 内容、schema、citations、评论流、off-site</li>
+            <li>AI-first 基础的完整功能性网站搭建</li>
+            <li>持续网站维护与技术更新</li>
+            <li>月度 AI 复测 + 线索追踪仪表盘</li>
+          </ul>
+        </div>
+        <span class="geo-price">$2,300<small>/月 · 全品牌</small></span>
+        <input type="radio" name="g" value="2300" class="geo-radio">
+      </label>
+      <label class="geo-clear"><input type="radio" name="g" value="0" checked> 暂不选 GEO / AI（D 类不计费）</label>
+    </div>
+    <div class="qb-sum">
+      <div class="qb-sr"><span class="l">A · Review 自助版 <span id="d-self" style="color:var(--ink-mute);font-size:11.5px"></span></span><span class="v" id="s-self">$0/月</span></div>
+      <div class="qb-sr"><span class="l">A · Review 全托管 <span id="d-full" style="color:var(--ink-mute);font-size:11.5px"></span></span><span class="v" id="s-full">$0/月</span></div>
+      <div class="qb-sr"><span class="l">B · GBP <span id="d-gbp" style="color:var(--ink-mute);font-size:11.5px"></span></span><span class="v" id="s-gbp">$0/月</span></div>
+      <div class="qb-sr"><span class="l">C · Advanced SEO with Website（全品牌）</span><span class="v" id="s-adv">$0/月</span></div>
+      <div class="qb-sr"><span class="l">D · GEO / AI（全品牌）</span><span class="v" id="s-geo">$0/月</span></div>
+      <div class="qb-sr"><span class="l">月费合计</span><span class="v" id="s-month">$0/月</span></div>
+      <div class="qb-sr big"><span class="l">首年总投入<br><span style="font-size:10.5px;font-weight:400;color:var(--ink-mute)">月费合计 × 12</span></span><span class="v" id="s-year">$0</span></div>
+    </div>
+  </div>
+  <div class="foot"><span>ACA × Baam · SEO &amp; GEO 增长服务提案</span><span>第 5 页</span></div>
+</section>
+
+<section class="page">
+  <div class="mark"><span class="mark-num">§ 06</span><span class="mark-t">Appendix · 附录报告</span></div>
+  <h2 class="headline">支撑数据，<em>原始报告。</em></h2>
+  <p class="deck">以下为本提案引用的两份原始诊断报告，点击在新标签页打开。</p>
+  <ol class="appx-toc">
+    <li>
+      <span class="n">A1</span>
+      <span>
+        <a class="t" href="https://julyliooon.github.io/ACA/ACAGBPreport.html" target="_blank" rel="noopener">ACA GBP Report ↗</a>
+        <span class="d">19 家门店 Google Business Profile 现状报告（评分 / 评价 / 回复率 / 发帖）</span>
+      </span>
+    </li>
+    <li>
+      <span class="n">A2</span>
+      <span>
+        <a class="t" href="https://julyliooon.github.io/ACA/Auditreport-washington-heights.html" target="_blank" rel="noopener">Audit Report — Washington Heights ↗</a>
+        <span class="d">Baam Review 单店评论审计（评分 62 / 100 · 竞品对比 · 12 个月预测）</span>
+      </span>
+    </li>
+  </ol>
+  <div class="foot"><span>ACA × Baam · SEO &amp; GEO 增长服务提案</span><span>第 6 页 · 完</span></div>
+</section>
+
+<script>
+(function(){
+  var qb=document.getElementById('qb');
+  var fmt=function(n){var r=Math.round(n*100)/100;return '$'+r.toLocaleString('en-US',{minimumFractionDigits:(r%1?2:0),maximumFractionDigits:2});};
+  var num=function(id){return Math.max(0,parseInt(document.getElementById(id).value||'0',10));};
+  function calc(){
+    var nSelf=num('cnt-self'),nFull=num('cnt-full'),nGbp=num('cnt-gbp');
+    var aSelf=99*nSelf,aFull=399*nFull,bGbp=99*nGbp;
+    var cAdv=document.getElementById('adv').checked?1999:0;
+    var selG=qb.querySelector('input[name=g]:checked');
+    var dGeo=selG?parseInt(selG.value,10):0;
+    var month=aSelf+aFull+bGbp+cAdv+dGeo;
+    document.getElementById('s-self').textContent=fmt(aSelf)+'/月';
+    document.getElementById('s-full').textContent=fmt(aFull)+'/月';
+    document.getElementById('s-gbp').textContent=fmt(bGbp)+'/月';
+    document.getElementById('s-adv').textContent=fmt(cAdv)+'/月';
+    document.getElementById('s-geo').textContent=fmt(dGeo)+'/月';
+    document.getElementById('s-month').textContent=fmt(month)+'/月';
+    document.getElementById('s-year').textContent=fmt(month*12);
+    document.getElementById('d-self').textContent=nSelf?('($99 × '+nSelf+' 店)'):'';
+    document.getElementById('d-full').textContent=nFull?('($399 × '+nFull+' 店)'):'';
+    document.getElementById('d-gbp').textContent=nGbp?('($99 × '+nGbp+' 店)'):'';
+  }
+  qb.addEventListener('input',calc);
+  qb.addEventListener('change',calc);
+  calc();
+})();
+</script>
+
+</body>
+</html>
